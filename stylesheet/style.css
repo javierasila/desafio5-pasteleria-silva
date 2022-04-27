@@ -1,0 +1,218 @@
+main .main__title2 h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 100px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px 100px 100px;
+    justify-items: center;
+    row-gap: 100px;
+}
+
+.card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #282828;
+}
+
+.card .nombre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #282828;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.card .precio {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card .card__btn {
+    background-color: #F25C54;
+    padding: 15px 10px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: transform .3s;
+}
+
+.card .card__btn:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 10px 10px -5px #e3d0d8;
+}
+
+
+/* FIN MAIN */
+/* FIN PAGINA PRODUCTOS----------- */
+
+
+/* MEDIA QUERYS  ---------------------*/
+
+@media (max-width:1200px) {
+    /* MEDIA QUERYS INDEX--- */
+
+    .main .main__text {
+        font-size: 5rem;
+        top: 25%;
+        width: 25%;
+    }
+    
+    .main .main__text span {
+        font-size: 5rem;
+    }
+
+    .btn1 {
+        left: 150px;
+    }
+    
+    .btn2 {
+        left: 150px;
+    }
+    
+    .btn3 {
+        left: 150px;
+    }
+
+    /* FIN MEDIA QUERYS INDEX--- */
+
+    /* MEDIA QUERYS PRODUCTOS--- */
+
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }  
+}
+
+@media (max-width: 768px) {    
+
+    /* MEDIA QUERYS HEADER  */
+    
+    .header {
+        display: block;
+        padding: 10px 40px;
+    }
+
+    .header .checkbtn {
+        display: block;
+    }
+
+    .header .nav__list {
+        display: block;
+        height: 100vh;
+        padding-top: 50px;
+        display: none;
+    }
+
+    .header .nav__list .nav__link {
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+
+    #check:checked ~ .nav__list {
+        display: block;
+    }
+
+    .header .nav__list .nav__link:hover {
+        border-bottom: none;
+    }
+
+    /* FIN MEDIA QUERYS HEADER -------- */
+
+    /* MEDIA QUERYS FOOTER---- */
+    
+    .footer .footer__container1 {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer__container1 .logo {
+        width: 100%;
+    }
+    
+    
+    .footer .footer__container1 .newsletter {
+        width: 100%;
+    }
+    
+    .footer .footer__container1 .rrss {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .footer .footer__container1 .footer__title {
+        font-size: 1rem;
+    }
+
+    
+    .footer .footer__container2 .rights {
+        font-size: 0.5rem;
+    }
+
+    /* FIN MEDIA QUERYS FOOTER---- */
+
+    /* MEDIA QUERYS PAGINA INDEX----- */
+    
+    .main .main__text {
+        font-size: 4rem;
+        margin-left: 40px;
+        top: 20%;
+    }
+    
+    .main .main__text span {
+        font-size: 4rem;
+    }
+    
+    .grid  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .productos {
+        width: 100%;
+    }
+    
+    .historia {
+        width: 100%;
+    }
+    
+    .visitanos {
+        width: 100%;
+    }
+
+    .grid .overlay1 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid .overlay2 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid .overlay3 {
+        width: 100%;
+        height: 100%;
+    }
+
+     /* FIN MEDIA QUERYS PAGINA INDEX----- */
+
+      /* MEDIA QUERYS PAGINA PRODUCTOS---- */
+    
+    .grid-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     /* FIN MEDIA QUERYS PAGINA PRODUCTOS----- */
+}
+    
+

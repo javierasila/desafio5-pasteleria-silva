@@ -1,0 +1,52 @@
+//Estilos Header
+
+.header {
+    background-color: #fabdb9;
+    padding: 10px 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    #check {
+        
+        display: none;       
+            
+    }
+    .checkbtn {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        display: none;
+        .burger {
+            height: 2rem;
+            
+        }
+    }          
+    .logo {
+        .logo__img {
+            height: 3.5rem;
+        } 
+    }
+    
+    .nav__list {
+        display: flex;
+        .nav__item {
+            .nav__link {
+                font-size: 1rem;
+                color: #fff;
+                margin-left: 20px;
+                border-bottom: 1px solid #fabdb9;
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+        
+    }
+    
+    
+}

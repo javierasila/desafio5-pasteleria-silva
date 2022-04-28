@@ -6,3 +6,34 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box; }
+
+.header {
+  background-color: #fabdb9;
+  padding: 10px 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header #check {
+    display: none; }
+  .header .checkbtn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    display: none; }
+    .header .checkbtn .burger {
+      height: 2rem; }
+  .header .logo .logo__img {
+    height: 3.5rem; }
+  .header .nav__list {
+    display: flex; }
+    .header .nav__list .nav__item .nav__link {
+      font-size: 1rem;
+      color: #fff;
+      margin-left: 20px;
+      border-bottom: 1px solid #fabdb9; }
+      .header .nav__list .nav__item .nav__link:hover {
+        border-bottom: 1px solid #fff; }

@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+        display: block;
+        padding: 10px 40px;
+    }
    
     #check {
         
@@ -21,6 +25,9 @@
         top: 25px;
         right: 40px;
         display: none;
+        @media (max-width: 768px) {
+            display: block;
+        }
         .burger {
             height: 2rem;
             
@@ -34,6 +41,12 @@
     
     .nav__list {
         display: flex;
+        @media (max-width: 768px) {
+            display: block;
+            height: 100vh;
+            padding-top: 50px;
+            display: none;
+        }
         .nav__item {
             .nav__link {
                 font-size: 1rem;
@@ -42,6 +55,13 @@
                 border-bottom: 1px solid #fabdb9;
                 &:hover {
                     border-bottom: 1px solid #fff;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                    line-height: 5rem;
+                    &:hover {
+                        border-bottom: none;
+                    }
                 }
             }
         }

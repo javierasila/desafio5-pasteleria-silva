@@ -11,9 +11,15 @@
         justify-content: space-between;
         align-items: flex-start;
         padding-bottom: 50px;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         .logo {
             width: 20%;
             height: auto; 
+            @media (max-width: 768px) {
+                width: 100%;
+            }
             .logo__img {
                 width: 8rem;
             }
@@ -21,6 +27,9 @@
         .newsletter {
             width: 34%;
             height: auto;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
             .footer__title {
                 font-size: 1.2rem;
                 font-weight: 500;
@@ -59,11 +68,18 @@
         .rrss {
             width: 30%;
             height: auto;
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-top: 20px;
+            }
             .footer__title {
                 font-size: 1.2rem;
                 font-weight: 500;
                 padding: 10px 0;
                 text-transform: uppercase;
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
             }
             .footer__text {
                 padding: 10px 0;
@@ -81,6 +97,9 @@
         margin-bottom: 20px;
         .rights {
             font-size: 0.75rem;
+            @media (max-width: 768px) {
+                font-size: 0.5 rem;
+            }
         }
     }
 }
